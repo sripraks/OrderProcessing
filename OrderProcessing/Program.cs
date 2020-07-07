@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EventsDelegatesLamda
+namespace OrderProcessing
 {
     class Program
     {
