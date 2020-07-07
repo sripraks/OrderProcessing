@@ -1,0 +1,5 @@
+D:\Technical\Mywork\GitHub\OrderProcessing\OrderProcessing\obj\x86\Debug\OrderProcessing.csprojAssemblyReference.cache
+D:\Technical\Mywork\GitHub\OrderProcessing\OrderProcessing\bin\Debug\OrderProcessing.exe
+D:\Technical\Mywork\GitHub\OrderProcessing\OrderProcessing\bin\Debug\OrderProcessing.pdb
+D:\Technical\Mywork\GitHub\OrderProcessing\OrderProcessing\obj\x86\Debug\OrderProcessing.exe
+D:\Technical\Mywork\GitHub\OrderProcessing\OrderProcessing\obj\x86\Debug\OrderProcessing.pdb

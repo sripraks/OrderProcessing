@@ -1,0 +1,5 @@
+D:\Praks\Mywork\C#\EventsDelegatesLamda\EventsDelegatesLamda\bin\Debug\EventsDelegatesLamda.exe
+D:\Praks\Mywork\C#\EventsDelegatesLamda\EventsDelegatesLamda\bin\Debug\EventsDelegatesLamda.pdb
+D:\Praks\Mywork\C#\EventsDelegatesLamda\EventsDelegatesLamda\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Praks\Mywork\C#\EventsDelegatesLamda\EventsDelegatesLamda\obj\x86\Debug\EventsDelegatesLamda.exe
+D:\Praks\Mywork\C#\EventsDelegatesLamda\EventsDelegatesLamda\obj\x86\Debug\EventsDelegatesLamda.pdb
