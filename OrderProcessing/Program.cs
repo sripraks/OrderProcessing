@@ -11,13 +11,18 @@ namespace OrderProcessing
             OrderProvisingEngine ProcessOrder = new OrderProvisingEngine();
             ProcessOrder.OrderSubmitted += new EventHandler<OrderSubmittedEventArgs>(ProcessOrder_OrderSubmitted); 
             ProcessOrder.SubmitOrder(order);
-            Console.ReadKey();
+            
         }
 
         static void ProcessOrder_OrderSubmitted(object sender, OrderSubmittedEventArgs e)
         {
-            Console.WriteLine("Order Submitted For Release2 "+e.OrderNum);
-            Console.ReadLine();
+            Console.WriteLine("Order Submitted "+e.OrderNum);
+            while (true)
+            {
+                Console.WriteLine("Order Status");
+                break;
+            }
+            Console.ReadKey();
         }
     }
 }
