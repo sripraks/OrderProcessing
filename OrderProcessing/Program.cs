@@ -11,7 +11,7 @@ namespace EventsDelegatesLamda
             OrderProvisingEngine ProcessOrder = new OrderProvisingEngine();
             ProcessOrder.OrderSubmitted += new EventHandler<OrderSubmittedEventArgs>(ProcessOrder_OrderSubmitted); 
             ProcessOrder.SubmitOrder(order);
-            Console.ReadKey();
+            
         }
 
         static void ProcessOrder_OrderSubmitted(object sender, OrderSubmittedEventArgs e)
@@ -20,7 +20,9 @@ namespace EventsDelegatesLamda
             while (true)
             {
                 Console.WriteLine("Order Status");
+                break;
             }
+            Console.ReadKey();
         }
     }
 }
