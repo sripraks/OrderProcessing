@@ -17,6 +17,10 @@ namespace EventsDelegatesLamda
         static void ProcessOrder_OrderSubmitted(object sender, OrderSubmittedEventArgs e)
         {
             Console.WriteLine("Order Submitted "+e.OrderNum);
+            while (true)
+            {
+                Console.WriteLine("Order Status");
+            }
         }
     }
 }
