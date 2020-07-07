@@ -16,7 +16,7 @@ namespace EventsDelegatesLamda
 
         static void ProcessOrder_OrderSubmitted(object sender, OrderSubmittedEventArgs e)
         {
-            Console.WriteLine("Order Submitted "+e.OrderNum);
+            Console.WriteLine("Order Submitted For Release1 "+e.OrderNum);
         }
     }
 }
