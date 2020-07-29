@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EventsDelegatesLamda
+namespace OrderProcessing
 {
     class Program
     {
@@ -11,12 +11,18 @@ namespace EventsDelegatesLamda
             OrderProvisingEngine ProcessOrder = new OrderProvisingEngine();
             ProcessOrder.OrderSubmitted += new EventHandler<OrderSubmittedEventArgs>(ProcessOrder_OrderSubmitted); 
             ProcessOrder.SubmitOrder(order);
-            Console.ReadKey();
+            
         }
 
         static void ProcessOrder_OrderSubmitted(object sender, OrderSubmittedEventArgs e)
         {
             Console.WriteLine("Order Submitted "+e.OrderNum);
+            while (true)
+            {
+                Console.WriteLine("Order Status ffdd");
+                break;
+            }
+            Console.ReadKey();
         }
     }
 }
