@@ -33,29 +33,29 @@ namespace
     /// <summary>Provides access to the git information for the current assembly.</summary>
     public partial class Git
     {
-      /// <summary>IsDirty: true</summary>
-      public const bool IsDirty = true;
+      /// <summary>IsDirty: false</summary>
+      public const bool IsDirty = false;
 
-      /// <summary>IsDirtyString: true</summary>
-      public const string IsDirtyString = "true";
+      /// <summary>IsDirtyString: false</summary>
+      public const string IsDirtyString = "false";
 
       /// <summary>Repository URL: https://github.com/sripraks/OrderProcessing.git</summary>
       public const string RepositoryUrl = "https://github.com/sripraks/OrderProcessing.git";
 
-      /// <summary>Branch: Release3</summary>
-      public const string Branch = "Release3";
+      /// <summary>Branch: master</summary>
+      public const string Branch = "master";
 
-      /// <summary>Commit: 3eff7ce</summary>
-      public const string Commit = "3eff7ce";
+      /// <summary>Commit: 0a44e48</summary>
+      public const string Commit = "0a44e48";
 
-      /// <summary>Sha: 3eff7ceaa05cb732bb35ab2e383d84e86dfa551f</summary>
-      public const string Sha = "3eff7ceaa05cb732bb35ab2e383d84e86dfa551f";
+      /// <summary>Sha: 0a44e48bea88d6bc904808c34ff4c8bc54e4cabe</summary>
+      public const string Sha = "0a44e48bea88d6bc904808c34ff4c8bc54e4cabe";
 
-      /// <summary>Commits on top of base version: 16</summary>
-      public const string Commits = "16";
+      /// <summary>Commits on top of base version: 21</summary>
+      public const string Commits = "21";
 
-      /// <summary>Tag: 0.1.0.1</summary>
-      public const string Tag = "0.1.0.1";
+      /// <summary>Tag: 0.1.0.1-5-g0a44e48</summary>
+      public const string Tag = "0.1.0.1-5-g0a44e48";
 
       /// <summary>Base tag: 0.1.0.1</summary>
       public const string BaseTag = "0.1.0.1";
@@ -82,8 +82,8 @@ namespace
         /// <summary>Minor: 0</summary>
         public const string Minor = "0";
 
-        /// <summary>Patch: 16</summary>
-        public const string Patch = "16";
+        /// <summary>Patch: 21</summary>
+        public const string Patch = "21";
 
         /// <summary>Label: </summary>
         public const string Label = "";
