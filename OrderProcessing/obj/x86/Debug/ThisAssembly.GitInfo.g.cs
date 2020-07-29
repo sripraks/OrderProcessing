@@ -33,11 +33,11 @@ namespace
     /// <summary>Provides access to the git information for the current assembly.</summary>
     public partial class Git
     {
-      /// <summary>IsDirty: true</summary>
-      public const bool IsDirty = true;
+      /// <summary>IsDirty: false</summary>
+      public const bool IsDirty = false;
 
-      /// <summary>IsDirtyString: true</summary>
-      public const string IsDirtyString = "true";
+      /// <summary>IsDirtyString: false</summary>
+      public const string IsDirtyString = "false";
 
       /// <summary>Repository URL: https://github.com/sripraks/OrderProcessing.git</summary>
       public const string RepositoryUrl = "https://github.com/sripraks/OrderProcessing.git";
@@ -45,20 +45,20 @@ namespace
       /// <summary>Branch: Release3</summary>
       public const string Branch = "Release3";
 
-      /// <summary>Commit: f7cf8e2</summary>
-      public const string Commit = "f7cf8e2";
+      /// <summary>Commit: 5aa128e</summary>
+      public const string Commit = "5aa128e";
 
-      /// <summary>Sha: f7cf8e2b88e850edd9e196f7ea1acded53fead45</summary>
-      public const string Sha = "f7cf8e2b88e850edd9e196f7ea1acded53fead45";
+      /// <summary>Sha: 5aa128ef49b4bd76090eb5a20fd365d38105745e</summary>
+      public const string Sha = "5aa128ef49b4bd76090eb5a20fd365d38105745e";
 
-      /// <summary>Commits on top of base version: 14</summary>
-      public const string Commits = "14";
+      /// <summary>Commits on top of base version: 0</summary>
+      public const string Commits = "0";
 
-      /// <summary>Tag: </summary>
-      public const string Tag = "";
+      /// <summary>Tag: 0.1.0</summary>
+      public const string Tag = "0.1.0";
 
-      /// <summary>Base tag: </summary>
-      public const string BaseTag = "";
+      /// <summary>Base tag: 0.1.0</summary>
+      public const string BaseTag = "0.1.0";
 
       /// <summary>Provides access to the base version information used to determine the <see cref="SemVer" />.</summary>      
       public partial class BaseVersion
@@ -66,8 +66,8 @@ namespace
         /// <summary>Major: 0</summary>
         public const string Major = "0";
 
-        /// <summary>Minor: 0</summary>
-        public const string Minor = "0";
+        /// <summary>Minor: 1</summary>
+        public const string Minor = "1";
 
         /// <summary>Patch: 0</summary>
         public const string Patch = "0";
@@ -79,11 +79,11 @@ namespace
         /// <summary>Major: 0</summary>
         public const string Major = "0";
 
-        /// <summary>Minor: 0</summary>
-        public const string Minor = "0";
+        /// <summary>Minor: 1</summary>
+        public const string Minor = "1";
 
-        /// <summary>Patch: 14</summary>
-        public const string Patch = "14";
+        /// <summary>Patch: 0</summary>
+        public const string Patch = "0";
 
         /// <summary>Label: </summary>
         public const string Label = "";
@@ -91,8 +91,8 @@ namespace
         /// <summary>Label with dash prefix: </summary>
         public const string DashLabel = "";
 
-        /// <summary>Source: Default</summary>
-        public const string Source = "Default";
+        /// <summary>Source: Tag</summary>
+        public const string Source = "Tag";
       }
     }
   }
