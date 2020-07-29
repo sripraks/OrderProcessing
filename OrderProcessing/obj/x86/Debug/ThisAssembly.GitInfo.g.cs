@@ -33,11 +33,11 @@ namespace
     /// <summary>Provides access to the git information for the current assembly.</summary>
     public partial class Git
     {
-      /// <summary>IsDirty: false</summary>
-      public const bool IsDirty = false;
+      /// <summary>IsDirty: true</summary>
+      public const bool IsDirty = true;
 
-      /// <summary>IsDirtyString: false</summary>
-      public const string IsDirtyString = "false";
+      /// <summary>IsDirtyString: true</summary>
+      public const string IsDirtyString = "true";
 
       /// <summary>Repository URL: https://github.com/sripraks/OrderProcessing.git</summary>
       public const string RepositoryUrl = "https://github.com/sripraks/OrderProcessing.git";
@@ -45,17 +45,17 @@ namespace
       /// <summary>Branch: master</summary>
       public const string Branch = "master";
 
-      /// <summary>Commit: 0a44e48</summary>
-      public const string Commit = "0a44e48";
+      /// <summary>Commit: e0794ad</summary>
+      public const string Commit = "e0794ad";
 
-      /// <summary>Sha: 0a44e48bea88d6bc904808c34ff4c8bc54e4cabe</summary>
-      public const string Sha = "0a44e48bea88d6bc904808c34ff4c8bc54e4cabe";
+      /// <summary>Sha: e0794adc13e1f4ef8ff5b997f14f8e81ff1c0b4e</summary>
+      public const string Sha = "e0794adc13e1f4ef8ff5b997f14f8e81ff1c0b4e";
 
-      /// <summary>Commits on top of base version: 21</summary>
-      public const string Commits = "21";
+      /// <summary>Commits on top of base version: 22</summary>
+      public const string Commits = "22";
 
-      /// <summary>Tag: 0.1.0.1-5-g0a44e48</summary>
-      public const string Tag = "0.1.0.1-5-g0a44e48";
+      /// <summary>Tag: 0.1.0.1-6-ge0794ad</summary>
+      public const string Tag = "0.1.0.1-6-ge0794ad";
 
       /// <summary>Base tag: 0.1.0.1</summary>
       public const string BaseTag = "0.1.0.1";
@@ -82,8 +82,8 @@ namespace
         /// <summary>Minor: 0</summary>
         public const string Minor = "0";
 
-        /// <summary>Patch: 21</summary>
-        public const string Patch = "21";
+        /// <summary>Patch: 22</summary>
+        public const string Patch = "22";
 
         /// <summary>Label: </summary>
         public const string Label = "";
