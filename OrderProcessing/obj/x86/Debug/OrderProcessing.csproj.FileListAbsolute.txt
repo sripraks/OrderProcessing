@@ -2,3 +2,4 @@ D:\Technical\Mywork\GitHub\OrderProcessing\OrderProcessing\bin\Debug\OrderProces
 D:\Technical\Mywork\GitHub\OrderProcessing\OrderProcessing\bin\Debug\OrderProcessing.pdb
 D:\Technical\Mywork\GitHub\OrderProcessing\OrderProcessing\obj\x86\Debug\OrderProcessing.exe
 D:\Technical\Mywork\GitHub\OrderProcessing\OrderProcessing\obj\x86\Debug\OrderProcessing.pdb
+D:\Technical\Mywork\GitHub\OrderProcessing\OrderProcessing\obj\x86\Debug\GitInfo.cache
