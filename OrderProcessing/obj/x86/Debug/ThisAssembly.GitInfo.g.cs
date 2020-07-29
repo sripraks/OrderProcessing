@@ -45,17 +45,17 @@ namespace
       /// <summary>Branch: master</summary>
       public const string Branch = "master";
 
-      /// <summary>Commit: 795b9fc</summary>
-      public const string Commit = "795b9fc";
+      /// <summary>Commit: d986478</summary>
+      public const string Commit = "d986478";
 
-      /// <summary>Sha: 795b9fc035023728598f59c35ad3d0914659ed7f</summary>
-      public const string Sha = "795b9fc035023728598f59c35ad3d0914659ed7f";
+      /// <summary>Sha: d986478c16716b28c1ccbf77667b70501e9bd5d7</summary>
+      public const string Sha = "d986478c16716b28c1ccbf77667b70501e9bd5d7";
 
-      /// <summary>Commits on top of base version: 24</summary>
-      public const string Commits = "24";
+      /// <summary>Commits on top of base version: 25</summary>
+      public const string Commits = "25";
 
-      /// <summary>Tag: 0.1.0.1-8-g795b9fc</summary>
-      public const string Tag = "0.1.0.1-8-g795b9fc";
+      /// <summary>Tag: 0.1.0.1-9-gd986478</summary>
+      public const string Tag = "0.1.0.1-9-gd986478";
 
       /// <summary>Base tag: 0.1.0.1</summary>
       public const string BaseTag = "0.1.0.1";
@@ -77,13 +77,13 @@ namespace
       public partial class SemVer
       {
         /// <summary>Major: 0</summary>
-        public const string Major = "0";
+        public const string Major = "1";
 
         /// <summary>Minor: 0</summary>
         public const string Minor = "0";
 
-        /// <summary>Patch: 24</summary>
-        public const string Patch = "24";
+        /// <summary>Patch: 25</summary>
+        public const string Patch = "25";
 
         /// <summary>Label: </summary>
         public const string Label = "";
