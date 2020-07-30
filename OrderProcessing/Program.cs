@@ -19,7 +19,7 @@ namespace OrderProcessing
 
         static void ProcessOrder_OrderSubmitted(object sender, OrderSubmittedEventArgs e)
         {
-            Console.WriteLine("Order Submitted "+e.OrderNum);
+            Console.WriteLine("Order Submitted after tag"+e.OrderNum);
             while (true)
             {
                 Console.WriteLine("Order Status");
