@@ -15,32 +15,29 @@ jobs:
     steps:
     - uses: actions/checkout@v2 
               
-    #- name: Setup MSBuild
-    #  uses: microsoft/setup-msbuild@v1
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1
 
-    #- name: Setup NuGet
-    #  uses: NuGet/setup-nuget@v1.0.2
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.2
 
-    #- name: Restore NuGet packages
-    #  run: nuget restore OrderProcessing.sln
+    - name: Restore NuGet packages
+      run: nuget restore OrderProcessing.sln
 
-    #- name: Build the Solution
-    #  run: msbuild OrderProcessing.sln /nologo /nr:false /p:DeployOnBuild=true /p:DeleteExistingFiles=True /p:configuration="Release" /p:PublishUrl="../_build"
+    - name: Build the Solution
+      run: msbuild OrderProcessing.sln /nologo /nr:false /p:DeployOnBuild=true /p:DeleteExistingFiles=True /p:configuration="Release" /p:PublishUrl="../_build"
     
     - name: Get version
       id: semver
       uses: LykkeBusiness/get-semver-from-tag-action@v1.0.2
       with:
            tag: ${{ github.ref }}
+       
     - name: Echo Semver
       run: echo "${{ steps.semver.outputs.non-prefixed }}"
       
-   # - name: 'Generate Version'
-   #   id: version
-   #   uses: fregante/daily-version-action@v1
-      
-   # - name: Upload artifact with version
-   #   uses: actions/upload-artifact@v1.0.0
-   #   with:
-   #         name: GitHubActionMVCDemo-${{ steps.version.outputs.version }}
-   #         path: "./_build"
+    - name: Upload artifact with version
+      uses: actions/upload-artifact@v1.0.0
+      with:
+            name: OrderProcessing-${{ steps.semver.outputs.non-prefixed }}
+            path: "./_build"
