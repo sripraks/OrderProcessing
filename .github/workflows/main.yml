@@ -16,17 +16,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2 
-    
-    - name: Increment Step Patch
-      id: increment-semver-patch
-      uses: Benbentwo/increment-semver@master
-      with:
-        version-level: '-p'
-  
-    - name: Get the output version
-      run: |
-          echo "The new patch version was ${{ steps.increment-semver-patch.outputs.version }}"
-          
+              
     #- name: Setup MSBuild
     #  uses: microsoft/setup-msbuild@v1
 
@@ -39,13 +29,13 @@ jobs:
     #- name: Build the Solution
     #  run: msbuild OrderProcessing.sln /nologo /nr:false /p:DeployOnBuild=true /p:DeleteExistingFiles=True /p:configuration="Release" /p:PublishUrl="../_build"
     
-    #- name: Get version
-    #  id: semver
-    #  uses: LykkeBusiness/get-semver-from-tag-action@v1.0.2
-    #  with:
-    #       tag: ${{ github.ref }}
-    #- name: Echo Semver
-    #  run: echo "$semver"
+    - name: Get version
+      id: semver
+      uses: LykkeBusiness/get-semver-from-tag-action@v1.0.2
+      with:
+           tag: ${{ github.ref }}
+    - name: Echo Semver
+      run: echo "$semver"
       
    # - name: 'Generate Version'
    #   id: version
