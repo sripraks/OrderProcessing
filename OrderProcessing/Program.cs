@@ -1,4 +1,5 @@
 ﻿using System;
+using Version = SemVer.Version;
 
 namespace OrderProcessing
 {
@@ -6,7 +7,9 @@ namespace OrderProcessing
     {
         static void Main(string[] args)
         {
-            
+
+            var semversion = new Version(1, 0, Int16.Parse(ThisAssembly.Git.SemVer.Patch)); 
+
             Order order = new Order("ITEM1", 100);
             OrderProvisingEngine ProcessOrder = new OrderProvisingEngine();
             ProcessOrder.OrderSubmitted += new EventHandler<OrderSubmittedEventArgs>(ProcessOrder_OrderSubmitted); 
