@@ -35,7 +35,7 @@ jobs:
       with:
            tag: ${{ github.ref }}
     - name: Echo Semver
-      run: echo "$semver"
+      run: echo "${{ semver }}"
       
    # - name: 'Generate Version'
    #   id: version
