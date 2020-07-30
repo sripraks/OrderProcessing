@@ -44,9 +44,8 @@ using OrderProcessing;
 [assembly: AssemblyInformationalVersion(
 	ThisAssembly.Git.SemVer.Major + "." +
 	ThisAssembly.Git.SemVer.Minor + "." +
-	ThisAssembly.Git.Commits + "-" +
-	ThisAssembly.Git.Branch + "+" +
-	ThisAssembly.Git.Commit)]
+	ThisAssembly.Git.BaseVersion.Patch + "." +
+	ThisAssembly.Git.SemVer.Patch)]
 
 //[assembly: AssemblyVersion(ThisAssembly.Git.SemVer.Major + "." + ThisAssembly.Git.SemVer.Minor + ThisAssembly.Git.SemVer.Patch)]
 //[assembly: AssemblyInformationalVersion(ThisAssembly.Git.SemVer.Major + "." + ThisAssembly.Git.SemVer.Minor + "." + ThisAssembly.Git.SemVer.Patch)]
