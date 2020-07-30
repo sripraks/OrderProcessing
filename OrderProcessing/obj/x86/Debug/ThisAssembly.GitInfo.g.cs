@@ -45,26 +45,26 @@ namespace
       /// <summary>Branch: master</summary>
       public const string Branch = "master";
 
-      /// <summary>Commit: e103740</summary>
-      public const string Commit = "e103740";
+      /// <summary>Commit: 56db5a4</summary>
+      public const string Commit = "56db5a4";
 
-      /// <summary>Sha: e10374083ed2e6c64aa9b8e4c44699df871e8b61</summary>
-      public const string Sha = "e10374083ed2e6c64aa9b8e4c44699df871e8b61";
+      /// <summary>Sha: 56db5a4851e79af778e320f6a7fbfa194eafda69</summary>
+      public const string Sha = "56db5a4851e79af778e320f6a7fbfa194eafda69";
 
-      /// <summary>Commits on top of base version: 28</summary>
-      public const string Commits = "28";
+      /// <summary>Commits on top of base version: 0</summary>
+      public const string Commits = "0";
 
-      /// <summary>Tag: 0.1.0.1-12-ge103740</summary>
-      public const string Tag = "0.1.0.1-12-ge103740";
+      /// <summary>Tag: 1.0.0</summary>
+      public const string Tag = "1.0.0";
 
-      /// <summary>Base tag: 0.1.0.1</summary>
-      public const string BaseTag = "0.1.0.1";
+      /// <summary>Base tag: 1.0.0</summary>
+      public const string BaseTag = "1.0.0";
 
       /// <summary>Provides access to the base version information used to determine the <see cref="SemVer" />.</summary>      
       public partial class BaseVersion
       {
-        /// <summary>Major: 0</summary>
-        public const string Major = "0";
+        /// <summary>Major: 1</summary>
+        public const string Major = "1";
 
         /// <summary>Minor: 0</summary>
         public const string Minor = "0";
@@ -76,14 +76,14 @@ namespace
       /// <summary>Provides access to SemVer information for the current assembly.</summary>
       public partial class SemVer
       {
-        /// <summary>Major: 0</summary>
-        public const string Major = "0";
+        /// <summary>Major: 1</summary>
+        public const string Major = "1";
 
         /// <summary>Minor: 0</summary>
         public const string Minor = "0";
 
-        /// <summary>Patch: 28</summary>
-        public const string Patch = "28";
+        /// <summary>Patch: 0</summary>
+        public const string Patch = "0";
 
         /// <summary>Label: </summary>
         public const string Label = "";
@@ -91,8 +91,8 @@ namespace
         /// <summary>Label with dash prefix: </summary>
         public const string DashLabel = "";
 
-        /// <summary>Source: Default</summary>
-        public const string Source = "Default";
+        /// <summary>Source: Tag</summary>
+        public const string Source = "Tag";
       }
     }
   }
