@@ -45,20 +45,20 @@ namespace
       /// <summary>Branch: master</summary>
       public const string Branch = "master";
 
-      /// <summary>Commit: 0b6300b</summary>
-      public const string Commit = "0b6300b";
+      /// <summary>Commit: ea2a29a</summary>
+      public const string Commit = "ea2a29a";
 
-      /// <summary>Sha: 0b6300b62bb193ef5707e64c611fdde105a852ef</summary>
-      public const string Sha = "0b6300b62bb193ef5707e64c611fdde105a852ef";
+      /// <summary>Sha: ea2a29a79191a060306dc5d0ee23167bd99736e2</summary>
+      public const string Sha = "ea2a29a79191a060306dc5d0ee23167bd99736e2";
 
-      /// <summary>Commits on top of base version: 1</summary>
-      public const string Commits = "1";
+      /// <summary>Commits on top of base version: 0</summary>
+      public const string Commits = "0";
 
-      /// <summary>Tag: 1.0.1-1-g0b6300b</summary>
-      public const string Tag = "1.0.1-1-g0b6300b";
+      /// <summary>Tag: 1.0.2</summary>
+      public const string Tag = "1.0.2";
 
-      /// <summary>Base tag: 1.0.1</summary>
-      public const string BaseTag = "1.0.1";
+      /// <summary>Base tag: 1.0.2</summary>
+      public const string BaseTag = "1.0.2";
 
       /// <summary>Provides access to the base version information used to determine the <see cref="SemVer" />.</summary>      
       public partial class BaseVersion
@@ -82,8 +82,8 @@ namespace
         /// <summary>Minor: 0</summary>
         public const string Minor = "0";
 
-        /// <summary>Patch: 1</summary>
-        public const string Patch = "1";
+        /// <summary>Patch: 0</summary>
+        public const string Patch = "0";
 
         /// <summary>Label: </summary>
         public const string Label = "";
