@@ -4,8 +4,10 @@ name: CI
 # events but only for the master branch
 on:
   push:
+     branches:    
+      - master
      tags:
-     - 1.'*'
+      - '*'
      
 jobs:
   # This workflow contains a single job called "Build"
