@@ -1,6 +1,5 @@
 D:\Technical\Mywork\GitHub\OrderProcessing\OrderProcessing\bin\Release\OrderProcessing.exe.config
 D:\Technical\Mywork\GitHub\OrderProcessing\OrderProcessing\bin\Release\OrderProcessing.exe
 D:\Technical\Mywork\GitHub\OrderProcessing\OrderProcessing\bin\Release\OrderProcessing.pdb
-D:\Technical\Mywork\GitHub\OrderProcessing\OrderProcessing\obj\x86\Release\GitInfo.cache
 D:\Technical\Mywork\GitHub\OrderProcessing\OrderProcessing\obj\x86\Release\OrderProcessing.exe
 D:\Technical\Mywork\GitHub\OrderProcessing\OrderProcessing\obj\x86\Release\OrderProcessing.pdb
