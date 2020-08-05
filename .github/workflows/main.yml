@@ -31,16 +31,17 @@ jobs:
     - name: Build the Solution
       run: msbuild OrderProcessing.sln /nologo /nr:false /p:DeployOnBuild=true /p:DeleteExistingFiles=True /p:configuration="Release;OutputPath=../_build"
     
-    - name: set assembly path filename
-      id: assemblyfilename
-      run: echo "::set-env name=assemblyfilename::./_build/OrderProcessing.exe"
+    #- name: set assembly path filename
+    #  id: assemblyfilename
+    #  run: echo "::set-env name=assemblyfilename::./_build/OrderProcessing.exe"
 
     - name: AssemblyInfo Version
+      id : get_version
       uses: jasondavis303/assembly-info-version@v1.0.1
       with:
         AI_PATH: OrderProcessing/Properties/AssemblyInfo.cs
 
-    - name: Next Step
+    - name: Display Version
       run: echo "${{ steps.get_version.outputs.ASSEMBLY_VERSION }}"
 
     #- name: Get Assembly Version
