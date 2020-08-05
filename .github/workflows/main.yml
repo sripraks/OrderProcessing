@@ -4,8 +4,12 @@ name: CI
 # events but only for the master branch
 on:
   push:
-     tags:
-      - '*'
+    branches: [ master ]
+  pull_request:
+   branches: [ master ]
+#  push:
+#    tags:
+#      - '*'
      
 jobs:
   # This workflow contains a single job called "Build"
@@ -27,17 +31,32 @@ jobs:
     - name: Build the Solution
       run: msbuild OrderProcessing.sln /nologo /nr:false /p:DeployOnBuild=true /p:DeleteExistingFiles=True /p:configuration="Release;OutputPath=../_build"
     
-    - name: Get version
-      id: semver
-      uses: LykkeBusiness/get-semver-from-tag-action@v1.0.2
-      with:
-           tag: ${{ github.ref }}
+    - name: set assembly path filename
+      id: assemblyfilename
+      run: echo "::set-env name=assemblyfilename::..\_build\OrderProcessing\OrderProcessing\bin\Debug\OrderProcessing.exe"
+
+    - name: Get Assembly Version
+      id: getassemblyversion
+      shell: pwsh
+      run: |
+          .\getversion.ps1 -Param1 ${env:assemblyfilename}
+          Get-ChildItem Env: | Where-Object {$_.Name -Match "^VERSION"} | %{ echo "::set-output name=$($_.Name)::$($_.Value)" }
+
+    - name: Display version
+      shell: pwsh
+      run: echo ${{ steps.getassemblyversion.outputs.VERSION }}
+      
+    #- name: Get version
+    #  id: semver
+    #  uses: LykkeBusiness/get-semver-from-tag-action@v1.0.2
+    #  with:
+    #       tag: ${{ github.ref }}
        
-    - name: Echo Semver
-      run: echo "${{ steps.semver.outputs.non-prefixed }}"
+    #- name: Echo Semver
+    #  run: echo "${{ steps.semver.outputs.non-prefixed }}"
       
     - name: Upload artifact with version
       uses: actions/upload-artifact@v1.0.0
       with:
-            name: OrderProcessing-${{ steps.semver.outputs.non-prefixed }}
+            name: OrderProcessing-${{ steps.getassemblyversion.outputs.VERSION }}
             path: "./_build"
