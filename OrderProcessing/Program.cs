@@ -1,5 +1,4 @@
 ﻿using System;
-using Version = SemVer.Version;
 
 namespace OrderProcessing
 {
