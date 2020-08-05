@@ -35,11 +35,10 @@ jobs:
       id: assemblyfilename
       run: echo "::set-env name=assemblyfilename::./_build/OrderProcessing.exe"
 
-    - name: Get version
-      id: get_version
-      uses: jasondavis303/assembly-info-version
+    - name: AssemblyInfo Version
+      uses: jasondavis303/assembly-info-version@v1.0.1
       with:
-          AI_PATH: OrderProcessing/Properties/AssemblyInfo.cs
+        AI_PATH: OrderProcessing/Properties/AssemblyInfo.cs
 
     - name: Next Step
       run: echo "${{ steps.get_version.outputs.ASSEMBLY_VERSION }}"
