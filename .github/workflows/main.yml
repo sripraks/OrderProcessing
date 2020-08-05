@@ -3,8 +3,8 @@ name: CI
 # Controls when the action will run. Triggers the workflow on push or pull request 
 # events but only for the master branch
 on:
-  # push:
-  #  branches: [ master ]
+  push:
+   branches: [ master ]
   pull_request:
    branches: [ master ]
 #  push:
@@ -31,20 +31,29 @@ jobs:
     - name: Build the Solution
       run: msbuild OrderProcessing.sln /nologo /nr:false /p:DeployOnBuild=true /p:DeleteExistingFiles=True /p:configuration="Release;OutputPath=../_build"
     
-    - name: set assembly path filename
-      id: assemblyfilename
-      run: echo "::set-env name=assemblyfilename::./_build/OrderProcessing.exe"
+    #- name: set assembly path filename
+    #  id: assemblyfilename
+    #  run: echo "::set-env name=assemblyfilename::./_build/OrderProcessing.exe"
 
-    - name: Get Assembly Version
-      id: getassemblyversion
-      shell: pwsh
-      run: |
-          .\getversion.ps1 -Param1 ${env:assemblyfilename}
-          Get-ChildItem Env: | Where-Object {$_.Name -Match "^VERSION"} | %{ echo "::set-output name=$($_.Name)::$($_.Value)" }
+    - name: AssemblyInfo Version
+      id : get_version
+      uses: jasondavis303/assembly-info-version@v1.0.1
+      with:
+        AI_PATH: OrderProcessing/Properties/AssemblyInfo.cs
 
-    - name: Display version
-      shell: pwsh
-      run: echo ${{ steps.getassemblyversion.outputs.VERSION }}
+    - name: Display Version
+      run: echo "${{ steps.get_version.outputs.ASSEMBLY_VERSION }}"
+
+    #- name: Get Assembly Version
+    #  id: getassemblyversion
+    #  shell: pwsh
+    #  run: |
+    #      .\getversion.ps1 -Param1 ${env:assemblyfilename}
+    #      Get-ChildItem Env: | Where-Object {$_.Name -Match "^VERSION"} | %{ echo "::set-output name=$($_.Name)::$($_.Value)" }
+
+    #- name: Display version
+    #  shell: pwsh
+    #  run: echo ${{ steps.getassemblyversion.outputs.VERSION }}
       
     #- name: Get version
     #  id: semver
@@ -58,5 +67,5 @@ jobs:
     - name: Upload artifact with version
       uses: actions/upload-artifact@v1.0.0
       with:
-            name: OrderProcessing-${{ steps.getassemblyversion.outputs.VERSION }}
-            path: "./_build"
+          name: OrderProcessing-${{ steps.get_version.outputs.ASSEMBLY_VERSION }}
+          path: "./_build"
