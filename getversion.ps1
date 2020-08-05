@@ -4,7 +4,7 @@ param(
     $Param1
 )
 
-Write-Output $Param1
+#Write-Output $Param1
 $version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($Param1).FileVersion.ToString()
 $Env:VERSION = $version
 Write-Output $version
