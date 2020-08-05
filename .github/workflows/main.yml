@@ -64,8 +64,8 @@ jobs:
     #- name: Echo Semver
     #  run: echo "${{ steps.semver.outputs.non-prefixed }}"
       
-    #- name: Upload artifact with version
-    #  uses: actions/upload-artifact@v1.0.0
-    #  with:
-    #        name: OrderProcessing-${{ steps.getassemblyversion.outputs.VERSION }}
-    #       path: "./_build"
+    - name: Upload artifact with version
+      uses: actions/upload-artifact@v1.0.0
+      with:
+          name: OrderProcessing-${{ steps.get_version.outputs.ASSEMBLY_VERSION }}
+          path: "./_build"
