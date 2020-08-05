@@ -19,16 +19,15 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: Run a one-line script
-      id: version
-    - uses: avakar/derive-version@v1
+    - name: Derive version
+      uses: avakar/derive-version@v1
     - run: |
         mkdir _build
         cd _build
         cmake .. -DVERSION="${{ steps.version.outputs.version }}"
+        
     - uses: avakar/tag-and-release@v1
       with:
          tag_name: ${{ steps.version.outputs.version }}
