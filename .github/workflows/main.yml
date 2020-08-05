@@ -33,7 +33,7 @@ jobs:
     
     - name: set assembly path filename
       id: assemblyfilename
-      run: echo "::set-env name=assemblyfilename::OrderProcessing\OrderProcessing\_build\OrderProcessing.exe"
+      run: echo "::set-env name=assemblyfilename::./_build/OrderProcessing.exe"
 
     - name: Get Assembly Version
       id: getassemblyversion
