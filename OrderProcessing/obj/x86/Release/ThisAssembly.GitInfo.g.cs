@@ -45,20 +45,20 @@ namespace
       /// <summary>Branch: master</summary>
       public const string Branch = "master";
 
-      /// <summary>Commit: 090ada6</summary>
-      public const string Commit = "090ada6";
+      /// <summary>Commit: c676215</summary>
+      public const string Commit = "c676215";
 
-      /// <summary>Sha: 090ada621295ec28d5d1e853603c5ec62854c99a</summary>
-      public const string Sha = "090ada621295ec28d5d1e853603c5ec62854c99a";
+      /// <summary>Sha: c676215120680bf5850eb67fd1bfd7e54b184e52</summary>
+      public const string Sha = "c676215120680bf5850eb67fd1bfd7e54b184e52";
 
-      /// <summary>Commits on top of base version: 0</summary>
-      public const string Commits = "0";
+      /// <summary>Commits on top of base version: 1</summary>
+      public const string Commits = "1";
 
-      /// <summary>Tag: 1.2.0</summary>
-      public const string Tag = "1.2.0";
+      /// <summary>Tag: 1.19.0-1-gc676215</summary>
+      public const string Tag = "1.19.0-1-gc676215";
 
-      /// <summary>Base tag: 1.2.0</summary>
-      public const string BaseTag = "1.2.0";
+      /// <summary>Base tag: 1.19.0</summary>
+      public const string BaseTag = "1.19.0";
 
       /// <summary>Provides access to the base version information used to determine the <see cref="SemVer" />.</summary>      
       public partial class BaseVersion
@@ -66,8 +66,8 @@ namespace
         /// <summary>Major: 1</summary>
         public const string Major = "1";
 
-        /// <summary>Minor: 2</summary>
-        public const string Minor = "2";
+        /// <summary>Minor: 19</summary>
+        public const string Minor = "19";
 
         /// <summary>Patch: 0</summary>
         public const string Patch = "0";
@@ -79,11 +79,11 @@ namespace
         /// <summary>Major: 1</summary>
         public const string Major = "1";
 
-        /// <summary>Minor: 2</summary>
-        public const string Minor = "2";
+        /// <summary>Minor: 19</summary>
+        public const string Minor = "19";
 
-        /// <summary>Patch: 0</summary>
-        public const string Patch = "0";
+        /// <summary>Patch: 1</summary>
+        public const string Patch = "1";
 
         /// <summary>Label: </summary>
         public const string Label = "";
