@@ -19,7 +19,7 @@ namespace OrderProcessing
             Console.WriteLine("Order Submitted after tag"+e.OrderNum);
             while (true)
             {
-                Console.WriteLine("Order Status");
+                Console.WriteLine("Order Status 2232");
                 break;
             }
             Console.ReadKey();

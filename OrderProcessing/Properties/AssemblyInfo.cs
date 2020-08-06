@@ -33,6 +33,6 @@ using OrderProcessing;
 //
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
-[assembly: AssemblyVersion("1.22.*")]
-//[assembly: AssemblyFileVersion("1.22.0")]
+// [assembly: AssemblyVersion("1.22.6.2033")]
+[assembly: AssemblyFileVersion("1.22.8.1038")]
 
