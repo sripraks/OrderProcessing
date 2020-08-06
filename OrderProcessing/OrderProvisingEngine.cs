@@ -5,7 +5,7 @@ namespace OrderProcessing
     public class OrderProvisingEngine
     {
         public event EventHandler<OrderSubmittedEventArgs> OrderSubmitted;
-        //yr
+        
         public void SubmitOrder(Order order)
         {
             //Mimic to Store the order into the DB
@@ -15,7 +15,7 @@ namespace OrderProcessing
             OrderSubmittedEventArgs e = new OrderSubmittedEventArgs(ordernum);
             OnOrderSubmitted(e);
         }
-
+        //test ddd
        protected virtual void OnOrderSubmitted(OrderSubmittedEventArgs e)
         {
             if (OrderSubmitted != null)
